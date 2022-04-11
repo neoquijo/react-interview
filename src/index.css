@@ -1,0 +1,125 @@
+:root{
+  margin: 0;
+  padding:0;
+  overflow:hidden
+}
+
+
+
+.resizable-col-wrapper{
+  width:100vw;
+  display: flex;
+
+  align-items: center;
+}
+.control-div{
+  border-right: 1px solid black; 
+  height: 100vh;
+  width: 500px;
+}
+.spacer{
+  opacity: 0;
+  background: none;
+  cursor: col-resize;
+  height: 20px;
+  width: 10px;
+  height:90vh;
+  
+}
+
+.resizable-col-map{
+  background-color: red;
+  width:100%;
+  height:100vh
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+  position: relative;
+  top: 90%;
+  background-color: rgba(246, 246, 246, 0.541);
+  border-radius: 20px;
+  width:80%;
+  height:85px;
+}
+
+.map-controls{
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  padding:20px
+  
+}
+
+.requests-tab{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 1rem;
+}
+
+.buttons{
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.address-list{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  max-height: 300px;
+  overflow:auto;
+}
+
+
+.address-line{
+  cursor:pointer;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.address-line:hover{
+  background-color:rgba(114, 175, 108, 0.164)
+}
+
+.requests-list{
+  display: flex;
+  margin: 20px 0;
+  width:100%;
+  min-width: 360px;
+  justify-content: space-between;
+  max-height: 300px;
+  
+  flex-direction: column;
+  
+  
+}
+
+
+.request-line{
+  cursor:pointer;
+  width:100%;
+  gap:15px;
+  font-weight: 600;
+  margin:5px;
+  padding: 16px ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.request-line:hover{
+  background-color: rgba(127, 255, 212, 0.26);
+}
